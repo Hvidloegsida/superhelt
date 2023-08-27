@@ -13,6 +13,9 @@ function showsuperhelt(superhelt) {
 
   copy.querySelector("h1").textContent = superhelt.alias;
   copy.querySelector("h3").textContent = superhelt.realName;
+  if (superhelt.powers.includes("flyve") || superhelt.powers.includes("flying") || superhelt.powers.includes("Fly")) {
+    copy.querySelector("article").classList.add("flyve");
+  }
   copy.querySelector("#power").textContent = superhelt.powers;
   copy.querySelector("#origin").textContent = superhelt.origin;
   copy.querySelector("#weakness").textContent = superhelt.weaknesses;
