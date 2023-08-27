@@ -4,3 +4,12 @@ h1 {
 article {
   border-style: solid;
 }
+
+/*ALLE MIN SUPERHELTE SKAL HAVE FJERNET DISPLAYET DER FORTÆLLER OM DE ER ONDE ELLER EJ*/
+.evil {
+  display: none;
+}
+
+article.eviltrue .evil {
+  display: block;
+}
