@@ -3,4 +3,18 @@ h1 {
 }
 article {
   border-style: solid;
+  position: relative;
+}
+
+.evil {
+  display: none;
+}
+
+article.eviltrue .evil {
+  display: block;
+}
+
+article.flyve::after {
+  content: "KAN FLYVE";
+  background-color: aqua;
 }
